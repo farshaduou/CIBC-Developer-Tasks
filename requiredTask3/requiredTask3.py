@@ -35,26 +35,29 @@ img2 = cv.imread('test_data\diff_test\image_2.png')
 cv.imshow('image 1',img1)
 cv.imshow('image 2',img2)
 
-dif = calcDiff(img1,img2)
-
-cv.imshow('difference in blue channel',dif[:, :, 0])
-cv.imshow('difference in red channel',dif[:, :, 1])
-cv.imshow('difference in green channel',dif[:, :, 2])
-
-
-
 while 1:
     print('\nUse the following input options to proceed:')
     print('Key\t: Action \n-------------------')
     print('Esc\t: exit')
+    print('s\t: compare images')
     print('s\t: save output')
+
         
     commandKey = cv.waitKey(0)    
     if commandKey == 27:         # wait for ESC key to exit
         cv.destroyAllWindows()
         break
     elif commandKey == ord('s'): # wait for 's' key to save and exit
-        cv.imwrite('output image.png',img)
+        dif = calcDiff(img1,img2)
+        cv.imwrite('output image.png',dif)
         cv.destroyAllWindows()
         break
+    elif commandKey == ord('c'): # wait for 's' key to save and exit
+        dif = calcDiff(img1,img2)
+        cv.imshow('difference of images',dif[:, :, 0])
+        cv.imshow('difference in blue channel',dif[:, :, 0])
+        cv.imshow('difference in red channel',dif[:, :, 1])
+        cv.imshow('difference in green channel',dif[:, :, 2])
+
+
 
