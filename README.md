@@ -18,3 +18,6 @@ Notes:
  **** Sorting Error occured ****  
 The projects are not sortable with the provided build requirements!
 
+# Bonus task 2  
+The affine transformation problem to overlap the two images seemes pretty straightforward and interesting to do but unfortunately I did not get a chance to work on it yet. For the two dimentional case, with the 3x3 transformation matrix, the matrix is comparable to the deformation gradient matrix for a hyperelasic body undergoing an arbitrary transformation. In continum mechanics these transformation are then split into deviatoric and isochoric parts that can be extracted from the transformation matrix.  
+If I get a chance later today I will look at this problem.
