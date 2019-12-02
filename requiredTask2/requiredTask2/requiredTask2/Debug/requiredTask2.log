@@ -1,0 +1,8 @@
+﻿  CircularArray.cpp
+  Source.cpp
+  Generating Code...
+Source.obj : error LNK2019: unresolved external symbol "public: __thiscall CircularArray<int>::CircularArray<int>(void)" (??0?$CircularArray@H@@QAE@XZ) referenced in function _main
+Source.obj : error LNK2019: unresolved external symbol "public: bool __thiscall CircularArray<int>::isEmpty(void)const " (?isEmpty@?$CircularArray@H@@QBE_NXZ) referenced in function _main
+Source.obj : error LNK2019: unresolved external symbol "public: void __thiscall CircularArray<int>::insertArray(int const &)" (?insertArray@?$CircularArray@H@@QAEXABH@Z) referenced in function _main
+Source.obj : error LNK2019: unresolved external symbol "public: int const & __thiscall CircularArray<int>::removeArray(void)" (?removeArray@?$CircularArray@H@@QAEABHXZ) referenced in function _main
+C:\Users\Farshad\Documents\GitHub\CIBC Developer Tasks\requiredTask2\requiredTask2\Debug\requiredTask2.exe : fatal error LNK1120: 4 unresolved externals
